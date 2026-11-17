@@ -1,288 +1,138 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Offline Inverse Reinforcement Learning</title>
-  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <meta name="color-scheme" content="light dark">
+  <title>Chenliang Li | Reinforcement Learning &amp; LLM Post-Training</title>
+  <meta name="description" content="Chenliang Li is a Ph.D. candidate in Data Science at Texas A&amp;M University, working on LLM post-training, long-horizon agents, and reinforcement learning.">
+  <meta property="og:title" content="Chenliang Li — Research">
+  <meta property="og:description" content="Reliable and efficient learning for language models and agents. Research, publications, and experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cloud0723.github.io/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://cloud0723.github.io/">
+  <link rel="icon" href="static/images/monogram.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/home.css">
+  <script src="static/js/home.js" defer></script>
 </head>
 <body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">When Demonstrations Meet Generative World Models:
-              A Maximum Likelihood Framework for Offline
-              Inverse Reinforcement Learning</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://siliangzeng.github.io/" target="_blank">Siliang Zeng</a><sup>*&loz;</sup>,</span>
-                <span class="author-block">
-                  <a href="https://scholar.google.com/citations?user=DMLi140AAAAJ&hl=en" target="_blank">Chenliang Li</a><sup>*&ordm;</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://engineering.tamu.edu/industrial/profiles/garcia-alfredo.html" target="_blank">Alfredo Garcia</a><sup>&ordm;</sup>,</span>
-                    <span class="author-block">
-                      <a href="https://people.ece.umn.edu/~mhong/mingyi.html" target="_blank">Mingyi Hong</a><sup>&loz;</sup></span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">NeurIPS 2023 Oral</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution<br>
-                      <sup>&loz;</sup>Department of Electrical and Computer Engineering,<br>
-                      University of Minnesota, MN, USA<br>
-                      <sup>&ordm;</sup>Department of Industrial and Systems Engineering,<br>
-                      Texas A&M University, TX, USA
-                    </small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://openreview.net/pdf?id=oML3v2cFg2" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="https://openreview.net/pdf?id=oML3v2cFg2" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/Cloud0723/Offline-MLIRL" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2302.07457" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="wordmark" href="#about" aria-label="Chenliang Li, home">CL<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="static/pdfs/Chenliang_Li_CV.pdf">CV ↗</a></nav>
+    <button class="theme-toggle" type="button" hidden aria-label="Switch to dark theme" aria-pressed="false"><span aria-hidden="true">◐</span></button>
+  </div></header>
+  <main id="main" class="page">
+    <section id="about" class="about-section" aria-labelledby="name">
+      <div class="intro">
+        <p class="eyebrow">Reinforcement learning · Language models · Agents</p>
+        <h1 id="name">Chenliang <span>Li</span></h1>
+        <p class="affiliation">Ph.D. Candidate in Data Science<br>Texas A&amp;M University</p>
+        <p class="lead">Building reliable and efficient learning systems for language models and agents.</p>
+        <p>I am a Ph.D. candidate at Texas A&amp;M University, advised by <a href="https://agarcia.engr.tamu.edu/">Prof. Alfredo Garcia</a>. My research focuses on <strong>LLM post-training</strong> and <strong>reinforcement learning</strong>, with an emphasis on fully asynchronous training, long-horizon agents, and joint reward–policy learning.</p>
+        <p>I work across algorithms, theory, and training systems. Previously, I was a research intern at <strong>ByteDance</strong> and <strong>GE HealthCare</strong>, working on asynchronous RL and multi-turn agent optimization.</p>
+        <div class="contact-links" aria-label="Contact and profiles">
+          <a href="mailto:chenliangli@tamu.edu">Email ↗</a>
+          <a href="https://scholar.google.com/citations?user=DMLi140AAAAJ&amp;hl=en">Google Scholar ↗</a>
+          <a href="https://github.com/Cloud0723">GitHub ↗</a>
+          <a href="static/pdfs/Chenliang_Li_CV.pdf">Curriculum vitae ↗</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <b>Overview:</b> We introduce the offline inverse reinforcement learning (<span class="dnerf">OFFLINE-MLIRL</span>) with provable associated statistical and computationa guarantees and outstanding empirical performances.
-      </h2>
-      <img src="./static/images/Overview.png" width="100%">
-    </div>
-  </div>
-</section>
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Offline inverse reinforcement learning (Offline IRL) aims to recover the structure of rewards
-and environment dynamics that underlie observed actions in a fixed, finite set of demonstrations
-from an expert agent. Accurate models of expertise in executing a task has applications in
-safety-sensitive applications such as clinical decision making and autonomous driving. However,
-the structure of an expert’s preferences implicit in observed actions is closely linked to the
-expert’s model of the environment dynamics (i.e. the “world”). Thus, inaccurate models of the
-world obtained from finite data with limited coverage could compound inaccuracy in estimated
-rewards. To address this issue, we propose a bi-level optimization formulation of the estimation
-task wherein the upper level is likelihood maximization based upon a conservative model of
-the expert’s policy (lower level). The policy model is conservative in that it maximizes reward
-subject to a penalty that is increasing in the uncertainty of the estimated model of the world. We
-propose a new algorithmic framework to solve the bi-level optimization problem formulation and
-provide statistical and computational guarantees of performance for the associated optimal reward
-estimator. Finally, we demonstrate that the proposed algorithm outperforms the state-of-the-art
-offline IRL and imitation learning benchmarks by a large margin, over the continuous control
-tasks in MuJoCo and different datasets in the D4RL benchmark.
-          </p>
-        </div>
+      <aside class="profile-aside" aria-label="Research profile">
+        <!-- Replace this monogram with a real portrait when one is available. -->
+        <div class="monogram" aria-hidden="true"><span>cl.</span><span class="monogram-caption">LEARNING TO REASON &amp; ACT</span></div>
+        <p class="profile-location">College Station, Texas</p><a class="profile-email" href="mailto:chenliangli@tamu.edu">chenliangli@tamu.edu</a>
+        <div class="profile-note"><span class="small-label">Research at the intersection of</span><p>Learning algorithms.<br>Scalable systems.<br>Sequential decisions.</p></div>
+      </aside>
+    </section>
+    <section class="research-section" aria-labelledby="research-title">
+      <div class="section-heading"><h2 id="research-title">Research interests</h2><span class="section-index" aria-hidden="true">01 / FOCUS</span></div>
+      <div class="research-grid">
+        <div><span class="research-number">01</span><h3>Efficient post-training</h3><p>Asynchronous RL, policy staleness, and scalable training for dense and mixture-of-experts language models.</p></div>
+        <div><span class="research-number">02</span><h3>Long-horizon agents</h3><p>Stable multi-turn optimization, tool use, and credit assignment for reasoning over extended interactions.</p></div>
+        <div><span class="research-number">03</span><h3>Learning from feedback</h3><p>Joint reward–policy learning, inverse reinforcement learning, and robust decision-making under uncertainty.</p></div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">Method</h2>
-      <img src="./static/images/Pipeline.png" width="100%">
-    </div>
-  </div>
-</section>
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Experiment Result</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Mujoco_Result1k.png" alt="MY ALT TEXT"/>
-        
+    </section>
+    <section id="publications" aria-labelledby="publications-title">
+      <div class="section-heading"><h2 id="publications-title">Publications &amp; preprints</h2><span class="section-index" aria-hidden="true">02 / RESEARCH</span></div>
+      <div class="publication-toolbar"><p>Selected work on learning, reasoning, and alignment.<br><span class="muted">* Equal contribution.</span></p>
+        <div class="publication-filters" role="group" aria-label="Filter publications" hidden><button type="button" data-filter="selected" aria-pressed="true">Selected</button><button type="button" data-filter="all" aria-pressed="false">All <span>7</span></button></div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Mujoco_Result.png" alt="MY ALT TEXT"/>
-        
+      <p class="sr-only" id="publication-status" role="status" aria-live="polite"></p>
+      <div class="publication-list"><article class="publication" data-selected="true">
+      <div class="publication-marker"><span class="venue">Preprint</span><span class="year">2026</span></div>
+      <div class="publication-content"><h3><a href="https://arxiv.org/abs/2609.36830">Where Does Staleness Accumulate? Pool Aware Effective Staleness Control for Asynchronous RL in LLM Post-Training</a></h3>
+        <p class="authors"><strong>Chenliang Li</strong>, Neiwen Ling, Zijun Wei, Alfredo Garcia</p><p class="paper-description">PACE controls rollout staleness while preserving the throughput benefits of asynchronous reinforcement learning.</p>
+        <div class="paper-links"><a href="https://arxiv.org/abs/2609.36830">arXiv ↗</a><a href="https://arxiv.org/pdf/2609.36830">PDF ↗</a></div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Mujoco_Result10k.png" alt="MY ALT TEXT"/>
-        
+    </article>
+<article class="publication" data-selected="true">
+      <div class="publication-marker"><span class="venue">COLM</span><span class="year">2026</span></div>
+      <div class="publication-content"><h3><a href="https://arxiv.org/abs/2511.20718">Stabilizing Off-Policy Training for Long-Horizon LLM Agent via Turn-Level Importance Sampling and Clipping-Triggered Normalization</a></h3>
+        <p class="authors"><strong>Chenliang Li</strong>, Adel Elmahdy, Alex Boyd, Zhongruo Wang, Siliang Zeng, Alfredo Garcia, Parminder Bhatia, Taha Kass-Hout, Cao Xiao, Mingyi Hong</p><p class="paper-description">SORL stabilizes off-policy learning for multi-turn LLM agents through structured optimization and suppression of unreliable updates.</p>
+        <div class="paper-links"><a href="https://arxiv.org/abs/2511.20718">arXiv ↗</a><a href="https://arxiv.org/pdf/2511.20718">PDF ↗</a></div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Reward_Correlation.png" alt="MY ALT TEXT"/>
-        
+    </article>
+<article class="publication" data-selected="false">
+      <div class="publication-marker"><span class="venue">TMLR</span><span class="year">2026</span></div>
+      <div class="publication-content"><h3><a href="https://openreview.net/forum?id=lG7VizZQcS">Adaptive Rank Control for Robust Reinforcement Learning</a></h3>
+        <p class="authors"><strong>Chenliang Li*</strong>, Junyu Leng*, Jiaxiang Li, Youbang Sun, Shixiang Chen, Shahin Shahrampour, Alfredo Garcia</p><p class="paper-description">Adaptive low-rank policy representations balance expressiveness and robustness under uncertainty in environment dynamics.</p>
+        <div class="paper-links"><a href="https://openreview.net/forum?id=lG7VizZQcS">Paper ↗</a><a href="https://arxiv.org/abs/2510.11899">Preprint ↗</a></div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Reward_transfer.png" alt="MY ALT TEXT"/>
-        
-     </div>
-     
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Transfer Learning</h2>
-      <div id="results-carousel" class="results-carousel" style="display: flex; gap: 20px;">
-        <div class="item item-video1" style="flex: 1;">
-          <video poster="" id="video1" autoplay controls muted loop style="width: 100%; height: auto;">
-            <!-- Your video file here -->
-            <source src="static/videos/Custom_Ant.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2" style="flex: 1;">
-          <video poster="" id="video2" autoplay controls muted loop style="width: 100%; height: auto;">
-            <!-- Your video file here -->
-            <source src="static/videos/Disabled_Ant.mp4" type="video/mp4">
-          </video>
-        </div>
+    </article>
+<article class="publication" data-selected="true">
+      <div class="publication-marker"><span class="venue">ICLR</span><span class="year">2025</span><span class="distinction">Spotlight</span></div>
+      <div class="publication-content"><h3><a href="https://openreview.net/forum?id=VCbqXtS5YY">Learning Reward and Policy Jointly from Demonstration and Preference Improves Alignment</a></h3>
+        <p class="authors"><strong>Chenliang Li</strong>, Siliang Zeng, Zeyi Liao, Jiaxiang Li, Dongyeop Kang, Alfredo Garcia, Mingyi Hong</p><p class="paper-description">AIHF integrates demonstrations and preferences to jointly learn rewards and policies for alignment.</p>
+        <div class="paper-links"><a href="https://openreview.net/forum?id=VCbqXtS5YY">Paper ↗</a><a href="https://arxiv.org/abs/2406.06874">arXiv ↗</a><a href="https://arxiv.org/pdf/2406.06874">PDF ↗</a></div>
       </div>
-    </div>
-  </div>
-</section>
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{zeng2023understanding,
-        title={Understanding Expertise through Demonstrations: A Maximum Likelihood Framework for Offline Inverse Reinforcement Learning},
-        author={Zeng, Siliang and Li, Chenliang and Garcia, Alfredo and Hong, Mingyi},
-        journal={arXiv preprint arXiv:2302.07457},
-        year={2023}
-      }</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
+    </article>
+<article class="publication" data-selected="false">
+      <div class="publication-marker"><span class="venue">AISTATS</span><span class="year">2025</span></div>
+      <div class="publication-content"><h3><a href="https://arxiv.org/abs/2503.17865">Understanding Inverse Reinforcement Learning under Overparameterization: Non-Asymptotic Analysis and Global Optimality</a></h3>
+        <p class="authors">Ruijia Zhang, Siliang Zeng, <strong>Chenliang Li</strong>, Alfredo Garcia, Mingyi Hong</p><p class="paper-description">Non-asymptotic convergence and global optimality guarantees for inverse reinforcement learning with neural reward models.</p>
+        <div class="paper-links"><a href="https://arxiv.org/abs/2503.17865">arXiv ↗</a><a href="https://arxiv.org/pdf/2503.17865">PDF ↗</a></div>
       </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+    </article>
+<article class="publication" data-selected="false">
+      <div class="publication-marker"><span class="venue">Preprint</span><span class="year">2025</span></div>
+      <div class="publication-content"><h3><a href="https://arxiv.org/abs/2505.11821">Reinforcing Multi-Turn Reasoning in LLM Agents via Fine-Grained Reward Structure and Credit Assignment</a></h3>
+        <p class="authors">Quan Wei, Siliang Zeng, <strong>Chenliang Li</strong>, Zhongruo Wang, William Brown, Oana Frunza, Wei Deng, Anderson Schneider, Yuriy Nevmyvaka, Yang Katie Zhao, Alfredo Garcia, Mingyi Hong</p><p class="paper-description">Studying how turn-level rewards and credit assignment improve learning in multi-turn search and game agents.</p>
+        <div class="paper-links"><a href="https://arxiv.org/abs/2505.11821">arXiv ↗</a><a href="https://arxiv.org/pdf/2505.11821">PDF ↗</a></div>
+      </div>
+    </article>
+<article class="publication" data-selected="true">
+      <div class="publication-marker"><span class="venue">NeurIPS</span><span class="year">2023</span><span class="distinction">Oral</span></div>
+      <div class="publication-content"><h3><a href="https://openreview.net/forum?id=oML3v2cFg2">When Demonstrations Meet Generative World Models: A Maximum Likelihood Framework for Offline Inverse Reinforcement Learning</a></h3>
+        <p class="authors">Siliang Zeng*, <strong>Chenliang Li*</strong>, Alfredo Garcia, Mingyi Hong</p><p class="paper-description">Offline ML-IRL learns rewards from fixed demonstrations using conservative world models, with statistical and computational guarantees.</p>
+        <div class="paper-links"><a href="https://openreview.net/forum?id=oML3v2cFg2">Paper ↗</a><a href="https://github.com/Cloud0723/Offline-MLIRL">Code ↗</a><a href="offline-mlirl.html">Project ↗</a><a href="https://arxiv.org/abs/2302.07457">arXiv ↗</a><a href="https://arxiv.org/pdf/2302.07457">PDF ↗</a></div>
+      </div>
+    </article></div>
+      <a class="scholar-link" href="https://scholar.google.com/citations?user=DMLi140AAAAJ&amp;hl=en">Full publication record on Google Scholar ↗</a>
+    </section>
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><h2 id="experience-title">Research experience</h2><span class="section-index" aria-hidden="true">03 / EXPERIENCE</span></div>
+      <div class="timeline-entry"><p class="entry-date">May — Aug 2026</p><div><h3>ByteDance <span>Research Intern</span></h3><p class="entry-meta">Large Language Model Systems Team · San Jose, CA</p><p>Developed PACE for efficient asynchronous RL post-training. Built training pipelines for mathematical and tool-integrated reasoning with dense and mixture-of-experts models.</p><p class="stack">verl · vLLM · Megatron · DAPO</p></div></div>
+      <div class="timeline-entry"><p class="entry-date">May — Aug 2025</p><div><h3>GE HealthCare <span>Research Intern</span></h3><p class="entry-meta">Long-Horizon LLM Agent Post-Training · Bellevue, WA</p><p>Developed SORL for stable multi-turn agent optimization, integrating interactive retrieval and distributed RL training for open-domain and medical question answering.</p><p class="stack">verl · FSDP · vLLM · PPO / GRPO</p></div></div>
+    </section>
+    <section id="education" aria-labelledby="education-title">
+      <div class="section-heading"><h2 id="education-title">Education</h2><span class="section-index" aria-hidden="true">04 / BACKGROUND</span></div>
+      <div class="education-entry"><p class="entry-date">2023 — Present</p><div><h3>Texas A&amp;M University</h3><p>Ph.D. in Data Science</p><p class="entry-meta">Advisor: Prof. Alfredo Garcia</p></div></div>
+      <div class="education-entry"><p class="entry-date">2021 — 2023</p><div><h3>The Chinese University of Hong Kong, Shenzhen</h3><p>Master of Data Science</p><p class="entry-meta">First-Class Merit Scholarship · Top 3%</p></div></div>
+      <div class="education-entry"><p class="entry-date">2017 — 2021</p><div><h3>Xi’an Jiaotong University</h3><p>Bachelor of Engineering in Computer Science</p></div></div>
+    </section>
+    <section id="recognition" aria-labelledby="recognition-title">
+      <div class="section-heading"><h2 id="recognition-title">Selected talks &amp; honors</h2><span class="section-index" aria-hidden="true">05 / BEYOND PAPERS</span></div>
+      <ul class="recognition-list">
+        <li><span>2025</span><p><strong>ICCOPT talk</strong> · Adaptive Low-Rank Representation in Reinforcement Learning</p></li>
+        <li><span>2024</span><p><strong>Ai4 invited speaker</strong> · When Demonstrations Meet Generative World Models</p></li>
+        <li><span>2023</span><p><strong>First-Class Merit Scholarship</strong> · CUHK-Shenzhen</p></li>
+        <li><span>2020</span><p><strong>First Prize, National RoboMaster Robotics Competition</strong> · XJTU Computer Vision Team</p></li>
+      </ul>
+    </section>
+    <section class="contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s talk research.</h2><p>For research conversations and collaboration, reach me by email.</p></div><a href="mailto:chenliangli@tamu.edu">chenliangli@tamu.edu ↗</a></section>
+  </main>
+  <footer class="site-footer"><span>© 2026 Chenliang Li</span><span>Last updated November 2026</span><a href="#about">Back to top ↑</a></footer>
+</body>
+</html>
