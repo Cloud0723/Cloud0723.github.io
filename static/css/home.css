@@ -234,13 +234,14 @@ h1 span {
   font-weight:500;
 }
 .profile-aside {
+  min-width:0;
   padding-top:11px;
 }
 .profile-photo {
   display:block;
-  width:100%;
-  height:auto;
-  aspect-ratio:4 / 5;
+  width:200px;
+  max-width:100%;
+  height:250px;
   object-fit:cover;
   object-position:49% center;
   border-radius:4px;
@@ -549,6 +550,10 @@ main>section:not(.about-section) {
   }
 }
 @media(max-width:800px) {
+  .profile-photo {
+    width:180px;
+    height:225px;
+  }
   .about-section {
     gap:35px;
     grid-template-columns:minmax(0,1fr) 180px;
@@ -640,8 +645,13 @@ main>section:not(.about-section) {
   }
   .profile-aside {
     order:-1;
-    width:160px;
+    width:140px;
+    max-width:100%;
     padding-top:0;
+  }
+  .profile-photo {
+    width:140px;
+    height:175px;
   }
   .profile-location,.profile-email,.profile-note {
     display:none;
