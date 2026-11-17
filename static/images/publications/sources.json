@@ -1,0 +1,114 @@
+[
+  {
+    "id": "pace",
+    "file": "pace.png",
+    "source": "https://arxiv.org/pdf/2609.36830v1",
+    "page": 3,
+    "label": "Figure 2",
+    "crop_pdf_points": [
+      80,
+      90,
+      523,
+      237
+    ],
+    "width": 1329,
+    "height": 441,
+    "alt": "PACE asynchronous RL pipeline with effective staleness control"
+  },
+  {
+    "id": "sorl",
+    "file": "sorl.png",
+    "source": "https://arxiv.org/pdf/2511.20718v3",
+    "page": 2,
+    "label": "Figure 1",
+    "crop_pdf_points": [
+      102,
+      76,
+      505,
+      225
+    ],
+    "width": 1209,
+    "height": 447,
+    "alt": "SORL framework combining turn-level credit assignment and clipping-triggered normalization"
+  },
+  {
+    "id": "adarl",
+    "file": "adarl.png",
+    "source": "https://arxiv.org/pdf/2510.11899v1",
+    "page": 3,
+    "label": "Figure 1 · preprint",
+    "crop_pdf_points": [
+      82,
+      73,
+      529,
+      198
+    ],
+    "width": 1341,
+    "height": 375,
+    "alt": "Comparison of robust reinforcement learning and adaptive rank policy learning"
+  },
+  {
+    "id": "aihf",
+    "file": "aihf.png",
+    "source": "https://arxiv.org/pdf/2406.06874v3",
+    "page": 5,
+    "label": "Figure 1",
+    "crop_pdf_points": [
+      72,
+      80,
+      541,
+      224
+    ],
+    "width": 1407,
+    "height": 432,
+    "alt": "Comparison of sequential RLHF and joint reward-policy learning with AIHF"
+  },
+  {
+    "id": "neural-irl",
+    "file": "neural-irl.png",
+    "source": "https://arxiv.org/pdf/2503.17865v1",
+    "page": 7,
+    "label": "Algorithm 3",
+    "crop_pdf_points": [
+      69,
+      70,
+      543,
+      356
+    ],
+    "width": 1422,
+    "height": 858,
+    "alt": "Two-timescale single-loop maximum likelihood inverse reinforcement learning algorithm"
+  },
+  {
+    "id": "multi-turn",
+    "file": "multi-turn.png",
+    "source": "https://arxiv.org/pdf/2505.11821v3",
+    "page": 19,
+    "label": "Figure 10",
+    "crop_pdf_points": [
+      54,
+      240,
+      543,
+      487
+    ],
+    "width": 1467,
+    "height": 741,
+    "alt": "Multi-turn LLM agent pipeline and comparison of turn-level and trajectory-level advantage estimation"
+  },
+  {
+    "id": "offline-mlirl",
+    "file": "offline-mlirl.png",
+    "source": "https://arxiv.org/pdf/2302.07457v3",
+    "page": 3,
+    "label": "Figure 1",
+    "crop_pdf_points": [
+      105,
+      77,
+      503,
+      135
+    ],
+    "width": 1194,
+    "height": 174,
+    "alt": "Offline ML-IRL framework from transition samples to a world model and reward estimator"
+  }
+]

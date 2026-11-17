@@ -22,6 +22,7 @@ ssh -L 8000:127.0.0.1:8000 your-user@your-server
 
 - `index.html`：个人介绍、论文、研究实习、教育、奖项及链接。
 - `static/css/home.css`：配色、响应式布局、深色模式及打印样式。
+- `static/images/publications/`：7 篇论文的原始框架图或算法截图；`sources.json` 记录来源版本、页码和 PDF 截取位置。
 - `static/js/home.js`：精选 / 全部论文切换及主题切换；关闭 JavaScript 时仍显示所有论文。
 - `static/pdfs/Chenliang_Li_CV.pdf`：用户提供的完整 CV 副本；更新 CV 时替换此文件。
 - `offline-mlirl.html`：原仓库首页完整保留的 NeurIPS 2023 项目页，继续使用原有 `static/` 资源。
@@ -45,6 +46,20 @@ ssh -L 8000:127.0.0.1:8000 your-user@your-server
 - 导师课题组的录用记录：https://agarcia.engr.tamu.edu/machine-learning-and-artificial-intelligence/
 
 Google Scholar 链接来自 CV；自动访问返回 403，因此没有抓取引用数、h-index 或宣称这是完整论文列表。AIHF 展示 CV / arXiv 标题；会议版本可能使用其他标题。SORL 使用 arXiv 页面上的标题拼写。TMLR 使用正式发表标题，预印本链接保留其早期名称。
+
+## 论文配图
+
+每篇论文的左侧显示缩略图；点击可在新标签页打开大图，图下的 source 链接直达对应 PDF 页。图片保留原始内容和比例，不使用生成式重绘。
+
+| 论文 | 配图 |
+| --- | --- |
+| PACE | Figure 2，PDF 第 3 页 |
+| SORL | Figure 1，PDF 第 2 页 |
+| Adaptive rank control | AdaRL 预印本 Figure 1，第 3 页；正式版 PDF 自动访问返回 403 |
+| AIHF | Figure 1，PDF 第 5 页 |
+| Overparameterized IRL | Algorithm 3，PDF 第 7 页；该理论论文用核心算法截图代替框架图 |
+| Multi-turn reasoning | Figure 10，PDF 第 19 页 |
+| Offline ML-IRL | Figure 1，PDF 第 3 页 |
 
 ## GitHub Pages
 
