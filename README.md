@@ -26,7 +26,7 @@ ssh -L 8000:127.0.0.1:8000 your-user@your-server
 - `static/pdfs/Chenliang_Li_CV.pdf`：用户提供的完整 CV 副本；更新 CV 时替换此文件。
 - `offline-mlirl.html`：原仓库首页完整保留的 NeurIPS 2023 项目页，继续使用原有 `static/` 资源。
 
-目前使用姓名首字母图形，未使用虚构头像。获得个人照片后，可替换 `index.html` 中的 `.monogram`，并按需调整移动端 `.profile-aside` 样式。
+头像使用仓库根目录的 `photo.jpg`，桌面端位于介绍右侧，移动端位于介绍上方。照片通过 CSS 的 `object-fit` 适配显示区域，原图文件不作修改。更换头像时替换该图片，并同步更新 `index.html` 中的图片尺寸和描述。
 
 新增论文时复制 `.publication` 条目；`data-selected="true"` 表示默认展示，其他条目在点击 All 后展示。同步更新 All 按钮中的总数。静态页脚日期需要手动更新。
 
